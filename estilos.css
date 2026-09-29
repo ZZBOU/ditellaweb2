@@ -1,0 +1,211 @@
+/* colores de la feria */
+:root {
+
+    --marron: #4a2c18;
+    --acento: #8b5a2b;
+    --dorado: #d4a574;
+    --crema: #fffaf3;
+
+}
+
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+html {font-size: 16px;}  /* 16px = 1rem */
+
+
+body {
+
+    color: #3b2618;
+    background-color: #f3e9dc;
+
+}
+
+
+header {
+
+    width: 100%;
+    padding: 3rem 10%;
+    background-color: var(--marron);
+    color: #f4eadc;
+    text-align: center;
+    border-bottom: 5px solid var(--dorado);
+
+}
+
+
+h1, h2 { padding: 0.3em 0;}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+
+header p { font-size: 1.1rem;}
+
+.fecha {font-style: italic;}
+
+
+main {
+
+    width: 90%;
+    margin: 30px auto;
+    /*centrar el main*/
+
+}
+
+
+section {
+
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 2rem;
+    background-color: var(--crema);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+}
+
+
+section > h2 {
+
+    font-size: 1.8rem;
+    color: var(--acento);
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--acento);
+
+}
+
+
+p {
+    font-size: 1rem;
+    padding: 6px 0;
+}
+
+
+/* el primer p despues del h2 */
+h2 + p { font-weight: bold;}
+
+
+h2 ~ p {
+    margin-bottom: 5px;
+}
+
+
+ul {padding: 10px 25px;}
+
+
+#recomendaciones li {
+    padding: 4px 0;
+}
+
+
+/* botones con degradado */
+button {
+
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8em 1.5em;
+    margin-top: 15px;
+    color: white;
+    background-image: linear-gradient(to right, #8b5a2b, #c68b59);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+
+}
+
+
+button:hover {
+    background-image: linear-gradient(to right, #c68b59, #8b5a2b);
+}
+
+
+/* tarjetas que vienen del json */
+.lineup {
+
+    .tarjeta {
+
+        width: 100%;
+        margin-top: 20px;
+        padding: 1em;
+        background-color: #f3e9dc;
+        border-radius: 5px;
+        border-bottom: 5px solid var(--acento);
+        box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+
+    }
+
+    h3 {
+        font-size: 1.4em;
+        color: var(--acento);
+    }
+
+}
+
+
+.detalles {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+
+iframe {
+    width: 100%;
+    height: 352px;
+    border-radius: 12px;
+}
+
+
+.musica div {margin-top: 15px;}
+
+
+/* si la seccion tiene el mapa */
+section:has(.mapa) {
+    text-align: center;
+}
+
+
+.mapa {
+
+    width: 100%;
+    margin-top: 15px;
+
+    iframe { height: 300px;}
+
+}
+
+
+footer {
+
+    width: 100%;
+    padding: 1.5rem;
+    background-color: var(--marron);
+    color: #f4eadc;
+    text-align: center;
+
+}
+
+
+/* modo oscuro, la clase se pone en el body con el boton */
+.dark {
+
+    background-color: #1a100c;
+    color: #f4eadc;
+
+}
+
+
+.dark section, .dark .tarjeta {
+    background-color: #3d2a1c;
+}
+
+.dark h2, .dark h3 {color: var(--dorado);}

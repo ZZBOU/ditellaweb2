@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feria de Café Plaza Armenia</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Feria de Café Plaza Armenia</h1>
+            <p>Un fin de semana para tomarse las cosas con calma: tostadores de acá, granos de distintos orígenes y gente que se puede quedar una hora hablando de un espresso.</p>
+            <p class="fecha">Sábado 17 y domingo 18 de octubre de 2026, de 10 a 18 hs. Plaza Armenia, Palermo, CABA.</p>
+
+            <button id="tema">Modo oscuro / claro</button>
+        </header> 
+    <!--fin del header-->
+
+        <main>
+
+            <section class="sobre">
+                <h2>Qué te vas a encontrar</h2>
+                <p>No es una cafetería enorme ni un evento de influencers. Es más bien una plaza llena de mesitas, el olor a café recién molido y alguien ofreciéndote probar un pour over de Etiopía.</p>
+                <p>Hay tostadores chicos de Colegiales, Villa Crespo y Palermo. Algunos traen la máquina de espresso, otros solo el molino y un par de chemex. La idea es probar, preguntar y llevarte un paquete a casa.</p>
+            </section>
+
+
+            <section id="recomendaciones">
+                <h2>Antes de ir</h2>
+                <p>Un par de cosas que conviene tener en cuenta, sobre todo si es la primera vez que vas a una feria de estas.</p>
+
+                <ul>
+                    <li>Llevar efectivo. Varios puestos no tienen QR y una taza suele estar entre 4 y 7 mil pesos.</li>
+                    <li>Si te vas a llevar granos, una bolsa o mochila.</li>
+                    <li>Ir con un poco de hambre no viene mal, hay medialunas y facturas.</li>
+                    <li>Si hace sol, gorra. En la plaza a mediodía hay poca sombra.</li>
+                </ul>
+            </section>
+
+
+            <!-- las tarjetas se cargan desde datos.json con el boton -->
+            <section class="lineup" id="tostadores">
+                <h2>Quiénes están este año</h2>
+                <p>Estos son los puestos que confirmaron para los dos días. Tocá el botón para verlos.</p>
+
+                <button id="cargar">Ver tostadores</button>
+
+                <div id="contenedor"></div>
+            </section>
+
+
+            <section class="musica">
+                <h2>La banda sonora de la feria</h2>
+                <p>Jazz suave de fondo, taza en la mano, sin apuro. Si nunca fuiste a algo así, poné esto y te das una idea.</p>
+
+                <div>
+                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWVqfgj8NZEp1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Playlist de jazz para tomar café"></iframe>
+                </div>
+            </section>
+
+
+            <section class="lugar">
+                <h2>Cómo llegar</h2>
+                <p>Plaza Armenia queda en Palermo, entre Honduras y Costa Rica. La estación Plaza Italia de la línea D está a unas cuadras.</p>
+
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2!2d-58.4303!3d-34.5889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM1JzIwLjAiUyA1OMKwMjUnNDkuMSJX!5e0!3m2!1ses!2sar" width="400" height="300" allowfullscreen="" loading="lazy" title="Mapa de Plaza Armenia"></iframe>
+                </div>
+            </section>
+
+        </main> <!--fin del main-->
+
+        <footer>
+            <p>2026 Feria de Café Plaza Armenia. Todos los derechos reservados.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

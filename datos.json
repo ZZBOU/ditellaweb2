@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "Cuatro Granos",
+        "descripcion": "Tostador de Colegiales. Hacen espresso y americano, siempre traen un origen de Colombia y otro mas floral.",
+        "detalles": "Sábado y domingo desde las 10 hs"
+    },
+    {
+        "titulo": "La Mesa de Vale",
+        "descripcion": "Solo filtrado: V60 y chemex. Vale te explica el metodo si nunca lo viste, conviene ir temprano porque se arma fila.",
+        "detalles": "Domingo a la mañana"
+    },
+    {
+        "titulo": "Origen Sur",
+        "descripcion": "Venden paquetes de 250 g para llevar y tienen una maquina chica de espresso. Un poco mas caros pero el grano es muy bueno.",
+        "detalles": "Los dos días, todo el día"
+    },
+    {
+        "titulo": "Medialunas Doña Tita",
+        "descripcion": "No es café pero no podia faltar. Medialunas de manteca, tortitas negras y alguna que otra chipa.",
+        "detalles": "Sábado y domingo hasta agotar stock"
+    }
+]
